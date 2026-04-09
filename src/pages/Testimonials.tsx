@@ -1,0 +1,63 @@
+import React from 'react';
+import { Card } from '../components/Card';
+import { PlayCircle } from 'lucide-react';
+
+export const Testimonials: React.FC = () => {
+  const writtenReviews = [
+    { name: 'Sheetal Sharma', role: 'Parent of Class 10 Student', review: '"Ishant sir changed the way my son looks at mathematics. From failing grades to topping the class, the journey has been marvellous."', initial: 'S' },
+    { name: 'Rahul Verma', role: 'Parent of Class 8 Student', review: '"The unique pedagogy and personal attention provided here is unmatched. My daughter looks forward to her classes every day."', initial: 'R' },
+    { name: 'Ankita Singh', role: 'Class 12 Student', review: '"His physics concepts are taught with such ease. The practical examples helped me clear my JEE basics with flying colors."', initial: 'A' },
+    { name: 'Naveen Mathur', role: 'Parent of Spoken English Student', review: '"I enrolled my kid for spoken english and the confidence boost we have seen in 3 months is just incredible."', initial: 'N' }
+  ];
+
+  return (
+    <div className="py-16 px-4 bg-gray-50 min-h-screen">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-primary-blue mb-4">Success Stories</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Don't just take our word for it. Hear from students and parents whose lives have been transformed through our mentoring.
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-bold mb-8 text-gray-900 border-b pb-2">Video Testimonials</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {[1, 2, 3].map((item) => (
+            <Card key={item} className="p-0 overflow-hidden group cursor-pointer shadow-md fade-in">
+              <div className="bg-gray-800 h-56 w-full flex items-center justify-center relative">
+                <img src={`https://images.unsplash.com/photo-15${item}0894539-7473b9e4ecda?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`} alt="Video testimonial" className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-500" />
+                <div className="relative z-10 text-white flex flex-col items-center">
+                  <PlayCircle size={48} className="text-white drop-shadow-lg mb-2 group-hover:text-primary-light transition-colors" />
+                </div>
+              </div>
+              <div className="p-4 bg-white">
+                <h4 className="font-bold text-gray-900">Student Success #{item}</h4>
+                <p className="text-sm text-gray-500">Board Exam Achiever</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        <h2 className="text-2xl font-bold mb-8 text-gray-900 border-b pb-2 mt-12">Written Reviews</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {writtenReviews.map((review, index) => (
+            <Card key={index} className="p-8 shadow-md">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary-blue font-bold text-xl mr-4 flex-shrink-0">
+                  {review.initial}
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">{review.name}</h4>
+                  <p className="text-sm text-gray-500">{review.role}</p>
+                </div>
+              </div>
+              <p className="text-gray-700 italic">
+                {review.review}
+              </p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
