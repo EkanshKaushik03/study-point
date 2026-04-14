@@ -34,35 +34,21 @@ export const Home: React.FC = () => {
               Unlock Your Child's <span className="text-trust-green">True Potential</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-lg">
-              Expert home tuition and mentoring that builds confidence, improves grades, and fosters a lifelong love for learning.
+              Personalized home tuition for Class 1 to 12 students in Jaipur right at your doorstep.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                <Button size="lg" className="bg-trust-green hover:bg-emerald-600 w-full sm:w-auto">
+                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
                   Book Free Demo
                 </Button>
               </Link>
               <Link to="/services">
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary-blue w-full sm:w-auto">
+                <Button variant="outlineWhite" size="lg" className="w-full sm:w-auto">
                   Explore Services
                 </Button>
               </Link>
             </div>
-            
-            <div className="mt-12 grid grid-cols-3 gap-6">
-              <div>
-                <div className="text-3xl font-bold mb-1">500+</div>
-                <div className="text-sm text-blue-200">Students Taught</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-1">98%</div>
-                <div className="text-sm text-blue-200">Success Rate</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-1">10+</div>
-                <div className="text-sm text-blue-200">Years Exp.</div>
-              </div>
-            </div>
+        
           </div>
           
           {/* Quick Enquiry Form */}
@@ -104,7 +90,7 @@ export const Home: React.FC = () => {
                   onChange={handleChange}
                   required
                 />
-                <Button fullWidth type="submit" className="mt-2 bg-primary-blue text-white hover:bg-primary-light">
+                <Button variant="primary" fullWidth type="submit" className="mt-2">
                   Submit Enquiry
                 </Button>
               </form>
@@ -127,7 +113,8 @@ export const Home: React.FC = () => {
                 <BookOpen size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Home Tuition</h3>
-              <p className="text-gray-600 mb-6">One-on-one personalized tutoring at the comfort of your home for all major subjects.</p>
+              <p className="text-gray-600 mb-6">One-on-one tuition at your home. Your child learns in a comfortable, familiar
+environment no travel, no stress. Available for all major subjects, Class 1 to 12.</p>
               <Link to="/services" className="text-primary-blue font-semibold flex items-center hover:text-primary-light">
                 Learn More <ArrowRight size={16} className="ml-2" />
               </Link>
@@ -138,7 +125,8 @@ export const Home: React.FC = () => {
                 <Users size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Spoken English</h3>
-              <p className="text-gray-600 mb-6">Build confidence and fluency with our interactive English communication classes.</p>
+              <p className="text-gray-600 mb-6">Is your child hesitant to speak in English? Our interactive spoken English sessions
+build confidence to speak, read and write English fluently.</p>
               <Link to="/services" className="text-trust-green font-semibold flex items-center hover:text-emerald-600">
                 Learn More <ArrowRight size={16} className="ml-2" />
               </Link>
@@ -149,7 +137,8 @@ export const Home: React.FC = () => {
                 <Trophy size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Competitive Exams</h3>
-              <p className="text-gray-600 mb-6">Specialized coaching to help students excel in standard competitive examinations.</p>
+              <p className="text-gray-600 mb-6">Preparing for NTSE, Olympiad, or board exams? Get focused coaching that covers
+the exact topics that matter most in competitive tests.</p>
               <Link to="/services" className="text-primary-light font-semibold flex items-center hover:text-blue-400">
                 Learn More <ArrowRight size={16} className="ml-2" />
               </Link>
@@ -172,15 +161,15 @@ export const Home: React.FC = () => {
                 <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
               </div>
               <p className="text-gray-700 italic mb-6 relative z-10">
-                "Ishant sir changed the way my son looks at mathematics. From failing grades to topping the class, the journey has been marvellous."
+                "He explains buisness studies & economics with such ease. The examples he gives are very practical and easy to understand."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary-blue font-bold text-xl mr-4">
-                  S
+                  A
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900">Sheetal Sharma</h4>
-                  <p className="text-sm text-gray-500">Parent of Class 10 Student</p>
+                  <h4 className="font-bold text-gray-900">Ankita Singh</h4>
+                  <p className="text-sm text-gray-500">Class 12 Student</p>
                 </div>
               </div>
             </Card>
@@ -190,7 +179,7 @@ export const Home: React.FC = () => {
                 <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
               </div>
               <p className="text-gray-700 italic mb-6 relative z-10">
-                "The unique pedagogy and personal attention provided here is unmatched. My daughter looks forward to her classes every day."
+                "We tried two tutors before Ishant Sir. The difference in quality and commitment is night and day. I"m very happy with the results.👍"
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-trust-green font-bold text-xl mr-4">
@@ -202,8 +191,26 @@ export const Home: React.FC = () => {
                 </div>
               </div>
             </Card>
+              <Card className="p-8 relative">
+              <div className="absolute top-4 right-4 text-gray-200">
+                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
+              </div>
+              <p className="text-gray-700 italic mb-6 relative z-10">
+                "I enrolled my kid for spoken english and the confidence boost we have seen in 3 months is just incredible."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary-blue font-bold text-xl mr-4">
+                  N
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Naveen Mathur</h4>
+                  <p className="text-sm text-gray-500">Parent of Spoken English Student</p>
+                </div>
+              </div>
+            </Card>
+            
 
-            {/* Video Testimonial Placeholder */}
+            {/* Video Testimonial Placeholder
             <Card className="p-0 overflow-hidden group cursor-pointer">
               <div className="bg-gray-200 h-48 w-full flex items-center justify-center relative">
                 <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Video thumbnail" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:scale-105 transition-transform duration-500" />
@@ -216,7 +223,7 @@ export const Home: React.FC = () => {
                 <h4 className="font-bold text-gray-900 mb-1">Aman's Journey</h4>
                 <p className="text-sm text-gray-500">Class 12 - Physics & Maths</p>
               </div>
-            </Card>
+            </Card> */}
           </div>
           
           <div className="text-center mt-12">
@@ -233,13 +240,13 @@ export const Home: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to see the difference?</h2>
           <p className="text-xl mb-8 text-blue-100">Join hundreds of successful students in Jaipur. Book your free demonstration session today.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:+919001150080">
-              <Button size="lg" className="bg-white text-primary-blue hover:bg-gray-100 w-full sm:w-auto text-lg font-bold">
+            <a href="tel:+919216697730">
+              <Button variant="solidWhite" size="lg" className="w-full sm:w-auto">
                 Call Now
               </Button>
             </a>
             <Link to="/contact">
-              <Button size="lg" className="bg-trust-green hover:bg-emerald-600 text-white w-full sm:w-auto text-lg font-bold">
+              <Button variant="secondary" size="lg" className="w-full sm:w-auto">
                 Book Trial Class
               </Button>
             </Link>

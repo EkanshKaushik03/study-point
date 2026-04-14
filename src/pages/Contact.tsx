@@ -44,21 +44,21 @@ export const Contact: React.FC = () => {
                   <Phone className="text-trust-green mr-4 flex-shrink-0" size={24} />
                   <div>
                     <span className="font-semibold block text-gray-900">Phone & WhatsApp</span>
-                    <span className="text-gray-600">+91 90011 50080</span>
+                    <span className="text-gray-600">92166 97730</span>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <Mail className="text-trust-green mr-4 flex-shrink-0" size={24} />
                   <div>
                     <span className="font-semibold block text-gray-900">Email</span>
-                    <span className="text-gray-600">contact@ishantstudypoint.com</span>
+                    <span className="text-gray-600">ishantshrimal404@gmail.com</span>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <Clock className="text-trust-green mr-4 flex-shrink-0" size={24} />
                   <div>
                     <span className="font-semibold block text-gray-900">Working Hours</span>
-                    <span className="text-gray-600">Mon - Sat: 9:00 AM - 8:00 PM</span>
+                    <span className="text-gray-600">Mon - Sun: 8:00 AM - 10:00 PM</span>
                   </div>
                 </li>
               </ul>
@@ -91,6 +91,7 @@ export const Contact: React.FC = () => {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Input label="Class / Grade" placeholder="e.g. Class 10" required />
+                    <Input label="School" placeholder="e.g. IIS School" required />
                     <Input label="Subject(s)" placeholder="e.g. Maths, Science" required />
                   </div>
                   <Input label="Contact Number" type="tel" placeholder="Your mobile number" required />

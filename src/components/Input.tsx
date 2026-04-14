@@ -11,7 +11,7 @@ export const Input: React.FC<InputProps> = ({ label, error, className = '', ...p
     <div className="w-full mb-4">
       {label && <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>}
       <input
-        className={`w-full px-4 py-2 border rounded-md focus:ring-primary-blue focus:border-primary-blue outline-none transition-all ${
+        className={`w-full px-4 py-2 border rounded-md bg-white text-gray-900 placeholder-gray-400 focus:ring-primary-blue focus:border-primary-blue outline-none transition-all ${
           error ? 'border-red-500' : 'border-gray-300'
         } ${className}`}
         {...props}
@@ -31,7 +31,7 @@ export const TextArea: React.FC<TextAreaProps> = ({ label, error, className = ''
     <div className="w-full mb-4">
       {label && <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>}
       <textarea
-        className={`w-full px-4 py-2 border rounded-md focus:ring-primary-blue focus:border-primary-blue outline-none transition-all ${
+        className={`w-full px-4 py-2 border rounded-md bg-white text-gray-900 placeholder-gray-400 focus:ring-primary-blue focus:border-primary-blue outline-none transition-all ${
           error ? 'border-red-500' : 'border-gray-300'
         } ${className}`}
         {...props}

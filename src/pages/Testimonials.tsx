@@ -4,9 +4,9 @@ import { PlayCircle } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   const writtenReviews = [
-    { name: 'Sheetal Sharma', role: 'Parent of Class 10 Student', review: '"Ishant sir changed the way my son looks at mathematics. From failing grades to topping the class, the journey has been marvellous."', initial: 'S' },
-    { name: 'Rahul Verma', role: 'Parent of Class 8 Student', review: '"The unique pedagogy and personal attention provided here is unmatched. My daughter looks forward to her classes every day."', initial: 'R' },
-    { name: 'Ankita Singh', role: 'Class 12 Student', review: '"His physics concepts are taught with such ease. The practical examples helped me clear my JEE basics with flying colors."', initial: 'A' },
+    { name: 'Ishan Sharma', role: 'Class 10 Student', review: '"I was Ishant sir’s student back when he had just started teaching. At that time also, the dedication was the same, he would explain things until every single student in the room understood, not just the toppers. That quality is rare. Most teachers teach for the smart kids and ignore the rest. Ishant Sir was never like that."', initial: 'I' },
+    { name: 'Rahul Verma', role: 'Parent of Class 6 Student', review: '"We tried two tutors before Ishant Sir. The difference in quality and commitment is night and day. I"m very happy with the results.👍"', initial: 'R' },
+    { name: 'Ankita Singh', role: 'Class 12 Student', review: '"He explains buisness studies & economics with such ease. The examples he gives are very practical and easy to understand."', initial: 'A' },
     { name: 'Naveen Mathur', role: 'Parent of Spoken English Student', review: '"I enrolled my kid for spoken english and the confidence boost we have seen in 3 months is just incredible."', initial: 'N' }
   ];
 
@@ -19,7 +19,7 @@ export const Testimonials: React.FC = () => {
             Don't just take our word for it. Hear from students and parents whose lives have been transformed through our mentoring.
           </p>
         </div>
-
+{/* 
         <h2 className="text-2xl font-bold mb-8 text-gray-900 border-b pb-2">Video Testimonials</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {[1, 2, 3].map((item) => (
@@ -36,7 +36,7 @@ export const Testimonials: React.FC = () => {
               </div>
             </Card>
           ))}
-        </div>
+        </div> */}
 
         <h2 className="text-2xl font-bold mb-8 text-gray-900 border-b pb-2 mt-12">Written Reviews</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

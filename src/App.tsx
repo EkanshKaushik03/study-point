@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Services } from './pages/Services';
 import { Testimonials } from './pages/Testimonials';
+import { Philosophy } from './pages/Philosophy';
 import { Contact } from './pages/Contact';
 import { AdminDashboard } from './pages/AdminDashboard';
 
@@ -18,7 +19,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="testimonials" element={<Testimonials />} />
-          <Route path="philosophy" element={<Content />} />
+          <Route path="philosophy" element={<Philosophy />} />
           <Route path="faqs" element={<Content />} />
           <Route path="contact" element={<Contact />} />
         </Route>

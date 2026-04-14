@@ -9,7 +9,7 @@ export const About: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-primary-blue mb-4">About Me</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Passionate about transforming education through personalized mentoring and dedicated guidance.
+            Hi, I'm Ishant Your Child's Personal Home Tutor in Jaipur
           </p>
         </div>
 
@@ -17,18 +17,23 @@ export const About: React.FC = () => {
           <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Hi, I'm Ishant</h2>
             <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              As the lead educator and founder of Ishant's Study Point, my mission is to provide high-quality, personalized education to students in Jaipur. I believe that every child has a unique learning style, and standard classroom settings often overlook individual potential.
+              I am Ishant, a home tutor based in Jaipur, Rajasthan. I started Ishant's Study Point
+because I believe every child learns differently and a classroom of 40 students
+cannot give the individual attention each child deserves.
+
             </p>
             <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              With a strong academic background and years of teaching experience, I have developed a unique pedagogy that focuses on conceptual clarity rather than rote memorization. When students understand 'why' something works, the 'how' becomes effortless.
+             When I teach at a student's home, I can see exactly where they are struggling, what
+pace works for them, and how to make the subject interesting for them personally.
+That's something no big coaching institute can offer.
             </p>
             <div className="flex gap-4 mt-8">
               <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex-1 text-center">
-                <div className="text-2xl font-bold text-primary-blue mb-1">M.Sc.</div>
+                <div className="text-2xl font-bold text-primary-blue mb-1">BCA</div>
                 <div className="text-sm text-gray-500">Qualification</div>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex-1 text-center">
-                <div className="text-2xl font-bold text-trust-green mb-1">10+</div>
+                <div className="text-2xl font-bold text-trust-green mb-1">3+</div>
                 <div className="text-sm text-gray-500">Years Exp</div>
               </div>
             </div>
@@ -37,10 +42,10 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-primary-blue transform translate-x-4 translate-y-4 rounded-2xl opacity-20"></div>
               {/* Using a placeholder for Ishant's picture */}
-              <div className="w-72 h-96 bg-gray-300 rounded-2xl relative z-10 overflow-hidden border-4 border-white shadow-xl">
+              <div className="w-72 h-96 bg-gray-100 rounded-2xl relative z-10 overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Ishant - Lead Educator" 
+                  src="2e27126f-605f-438a-b0df-e367e9b3ce88.jfif" 
+                  alt="Placeholder for Ishant" 
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -21,7 +21,7 @@ export const Services: React.FC = () => {
     {
       title: "Summer Camps",
       description: "Engaging holistic development programs during summer breaks focusing on skill building and creative learning.",
-      features: ["Coding Basics", "Personality Development", "Creative Writing", "Vedic Math"],
+      features: ["Coding Basics", "Personality Development", "Creative Writing"],
       color: "border-primary-light"
     }
   ];
@@ -64,13 +64,13 @@ export const Services: React.FC = () => {
         </div>
         
         <div className="bg-primary-blue rounded-2xl p-8 md:p-12 text-center text-white shadow-xl">
-          <h2 className="text-3xl font-bold mb-4">Need a Custom Study Plan?</h2>
+          <h2 className="text-3xl font-bold mb-4">Schedule a free counseling session</h2>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto text-lg">
             Every student is different. Contact us to discuss your specific requirements and we will design a personalized curriculum just for you.
           </p>
           <Link to="/contact">
             <Button size="lg" className="bg-white text-primary-blue hover:bg-gray-100 font-bold">
-              Schedule a Counseling Session
+              Book a Free Session
             </Button>
           </Link>
         </div>
