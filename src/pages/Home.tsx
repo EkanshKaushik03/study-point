@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card } from '../components/Card';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
-import { BookOpen, Users, Trophy, ArrowRight, PlayCircle } from 'lucide-react';
+import { BookOpen, Users, Trophy, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Home: React.FC = () => {

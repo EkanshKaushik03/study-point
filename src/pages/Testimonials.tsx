@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../components/Card';
-import { PlayCircle } from 'lucide-react';
+
 
 export const Testimonials: React.FC = () => {
   const writtenReviews = [

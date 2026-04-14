@@ -1,11 +1,10 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin } from 'lucide-react';
+import { Phone, MessageCircle } from 'lucide-react';
 
 export const FloatingActions: React.FC = () => {
   const phoneNumber = "9216697730"; // Example placeholder
   const encodedMessage = encodeURIComponent("I want a free counselling and demonstration session.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-  const mapUrl = "https://maps.google.com";
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
